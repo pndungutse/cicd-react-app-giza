@@ -22,10 +22,10 @@ jobs:
                 password: ${{ secrets.DOCKERHUB_TOKEN }}
 
             - name: Build Dockerfile
-              run: docker build -t cicd-app:latest -t cicd-app .
-            
+              run: docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/cicd-app:latest -t ${{ secrets.DOCKERHUB_USERNAME }}/cicd-app:${{ github.sha }} .
+
             - name: Push to DockerHub
-              run: docker push --all-tags cicd-app
+              run: docker push --all-tags ${{ secrets.DOCKERHUB_USERNAME }}/cicd-app
 
     # update-manifest:
     #   runs-on: ubuntu-latest
