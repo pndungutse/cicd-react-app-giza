@@ -1,0 +1,227 @@
+:root {
+  --giza-dark: #0f172a;
+  --giza-dark-2: #1e293b;
+  --giza-primary: #f59e0b;
+  --giza-primary-dark: #d97706;
+  --giza-accent: #8b5cf6;
+  --giza-muted: #94a3b8;
+}
+
+/* Header */
+.giza-header {
+  background: rgba(15, 23, 42, 0.95);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.giza-header .nav-link {
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 500;
+}
+
+.giza-header .nav-link:hover {
+  color: #fff;
+}
+
+.giza-brand {
+  color: #fff;
+  font-weight: 800;
+  font-size: 1.4rem;
+  letter-spacing: 0.08em;
+}
+
+.giza-brand:hover {
+  color: #fff;
+}
+
+.giza-logo {
+  color: var(--giza-primary);
+}
+
+/* Buttons */
+.giza-btn-primary {
+  background: var(--giza-primary);
+  border: 1px solid var(--giza-primary);
+  color: var(--giza-dark);
+  font-weight: 600;
+}
+
+.giza-btn-primary:hover,
+.giza-btn-primary:focus-visible {
+  background: var(--giza-primary-dark);
+  border-color: var(--giza-primary-dark);
+  color: var(--giza-dark);
+}
+
+.giza-btn-outline {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: #fff;
+  font-weight: 600;
+}
+
+.giza-btn-outline:hover,
+.giza-btn-outline:focus-visible {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: #fff;
+  color: #fff;
+}
+
+/* Hero */
+.giza-hero {
+  background:
+    radial-gradient(circle at 20% 20%, rgba(139, 92, 246, 0.25), transparent 50%),
+    radial-gradient(circle at 80% 0%, rgba(245, 158, 11, 0.2), transparent 45%),
+    var(--giza-dark);
+  color: #fff;
+  padding: 6rem 0 5rem;
+}
+
+.giza-pill {
+  display: inline-block;
+  padding: 0.35rem 1rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid rgba(245, 158, 11, 0.4);
+  border-radius: 999px;
+  background: rgba(245, 158, 11, 0.1);
+  color: var(--giza-primary);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.giza-hero-title {
+  font-size: clamp(2.25rem, 6vw, 4rem);
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+}
+
+.giza-gradient-text {
+  background: linear-gradient(90deg, var(--giza-primary), var(--giza-accent));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.giza-hero-text {
+  max-width: 640px;
+  margin: 0 auto 2rem;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 1.15rem;
+}
+
+.giza-stat-value {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--giza-primary);
+}
+
+.giza-stat-label {
+  font-size: 0.85rem;
+  color: var(--giza-muted);
+}
+
+/* Sections */
+.giza-section {
+  padding: 5rem 0;
+}
+
+.giza-section-alt {
+  background: #f8fafc;
+}
+
+.giza-section-title {
+  font-weight: 800;
+  color: var(--giza-dark);
+}
+
+/* Track cards */
+.giza-card {
+  border: 1px solid #e2e8f0;
+  border-radius: 1rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.giza-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(15, 23, 42, 0.08);
+}
+
+.giza-card-icon {
+  display: grid;
+  place-items: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.75rem;
+  background: rgba(245, 158, 11, 0.12);
+  font-size: 1.5rem;
+}
+
+.giza-tag {
+  padding: 0.2rem 0.65rem;
+  border-radius: 999px;
+  background: #f1f5f9;
+  color: var(--giza-dark-2);
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+/* Steps */
+.giza-step {
+  height: 100%;
+  padding: 2rem;
+  border-radius: 1rem;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+}
+
+.giza-step-number {
+  margin-bottom: 0.75rem;
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1;
+  color: var(--giza-primary);
+}
+
+/* Call to action */
+.giza-cta {
+  padding: 3.5rem 1.5rem;
+  border-radius: 1.25rem;
+  background: linear-gradient(135deg, var(--giza-accent), var(--giza-dark));
+  color: #fff;
+}
+
+/* Footer */
+.giza-footer {
+  padding: 4rem 0 2rem;
+  background: var(--giza-dark);
+  color: #fff;
+}
+
+.giza-footer-heading {
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.giza-footer-text {
+  color: var(--giza-muted);
+}
+
+.giza-footer a:not(.giza-brand) {
+  color: var(--giza-muted);
+  text-decoration: none;
+  line-height: 2;
+}
+
+.giza-footer a:not(.giza-brand):hover {
+  color: var(--giza-primary);
+}
+
+.giza-footer-divider {
+  margin: 2rem 0 1.5rem;
+  border-color: rgba(255, 255, 255, 0.15);
+  opacity: 1;
+}
