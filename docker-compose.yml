@@ -1,0 +1,7 @@
+services:
+  app: cicd-react-app-giza
+  container_name: "CICD-app"
+
+  ports: "3000:3000"
+
+  restart: always
